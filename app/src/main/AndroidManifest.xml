@@ -19,19 +19,19 @@
         android:theme="@style/Theme.TicketSave">
 
         <!-- Proveedor para acceso al disco -->
+        <!-- Escritura Memoria Interna -->
         <provider
-            android:authorities="com.marcosledesma.ejemplo09_permisos"
+            android:authorities="com.marcosledesma.ticketsave"
             android:name="androidx.core.content.FileProvider"
             android:exported="false"
-            android:grantUriPermissions="true"
-            tools:ignore="WrongManifestParent">
+            android:grantUriPermissions="true">
 
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_path"
-                >
-            </meta-data>
+                ></meta-data>
         </provider>
+        <!-- ......................... -->
 
         <activity
             android:name=".MainActivity"
