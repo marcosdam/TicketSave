@@ -19,7 +19,6 @@
         android:theme="@style/Theme.TicketSave">
 
         <!-- Proveedor para acceso al disco -->
-        <!-- Escritura Memoria Interna -->
         <provider
             android:authorities="com.marcosledesma.ticketsave"
             android:name="androidx.core.content.FileProvider"
